@@ -1,0 +1,336 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*custom styles*/
+
+body {
+  font-size: 20px;
+  background: linear-gradient(to right, rgb(224, 149, 224), rgb(143, 222, 143));
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 3rem 0;
+  background-color: #21396a;
+  text-align: center;
+  margin-bottom: 2rem;
+  /* -webkit-clip-path: polygon(
+    0% 0%,
+    0% 99%,
+    6% 83%,
+    11% 74%,
+    15% 69%,
+    19% 68%,
+    23% 66%,
+    29% 62%,
+    34% 56%,
+    37% 46%,
+    39% 41%,
+    47% 39%,
+    57% 42%,
+    70% 40%,
+    77% 39%,
+    87% 39%,
+    92% 39%,
+    97% 38%,
+    100% 38%,
+    100% 1%
+  );
+  clip-path: polygon(
+    0% 0%,
+    0% 99%,
+    6% 98%,
+    11% 97%,
+    15% 96%,
+    19% 95%,
+    23% 94%,
+    29% 85%,
+    34% 80%,
+    37% 75%,
+    39% 70%,
+    47% 50%,
+    57% 42%,
+    70% 40%,
+    77% 39%,
+    87% 39%,
+    92% 39%,
+    97% 38%,
+    100% 38%,
+    100% 1%
+  ); */
+}
+.header strong {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #37b667;
+}
+.sec-heading {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 6px #ff0000;
+}
+.flex {
+  display: flex;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.btn {
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+.btn:hover {
+  box-shadow: 2px 2px 2px #ff0000;
+}
+.btn-pri {
+  background-color: #4c5c7e;
+  color: white;
+}
+
+.btn-sec {
+  background-color: gold;
+  color: black;
+  border: 1px solid black;
+}
+.categories-div button {
+  margin: 0.5rem;
+}
+.center {
+  justify-content: center;
+}
+
+.home-btn-div {
+  padding: 1rem 2rem;
+  font-size: 2rem;
+}
+/*Quiz*/
+.question-div {
+  max-width: 600px;
+  margin: 0 auto;
+  min-height: 70vh;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: #c4c0ec;
+}
+
+.question-div > * {
+  margin-bottom: 1rem;
+}
+
+.question-div .sec-heading {
+  margin-bottom: 2rem;
+}
+
+.question-div .sec-heading span {
+  color: black;
+  font-size: 2rem;
+}
+
+.question-div h3 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #ea4d32;
+}
+
+.question-div h3 span {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: black;
+}
+
+.question-div .btn-ter {
+  margin-bottom: 1rem;
+}
+
+.question-div ul {
+  max-width: 400px;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+.question-div ul li {
+  margin-bottom: 1rem;
+  border: 1px solid black;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 10px;
+}
+
+.question-div ul .active {
+  background-color: #21396a;
+  color: white;
+}
+/*Result*/
+.result-sec .sec-heading span {
+  color: black;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+table {
+  border: 1px solid black;
+  max-width: 900px;
+  margin: 3rem auto;
+}
+
+table tr {
+  border: 1px solid black;
+}
+
+table th {
+  font-weight: 800;
+}
+
+table th,
+table td {
+  border: 1px solid black;
+  padding: 0.5rem;
+}
+
+table svg {
+  height: 2rem;
+  width: 2rem;
+}
+
+table .bi-check-circle-fill {
+  color: green;
+}
+
+table .bi-x-circle-fill {
+  color: #e44862;
+}
